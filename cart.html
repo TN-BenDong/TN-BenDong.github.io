@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Cart | The Digital Diner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadada",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#f6bb82",
+              "on-secondary-fixed-variant": "#5a4300",
+              "surface-variant": "#e2e2e2",
+              "primary-fixed": "#ffdad4",
+              "on-background": "#1b1b1b",
+              "primary": "#b50303",
+              "background": "#f9f9f9",
+              "on-tertiary-fixed": "#2d1600",
+              "on-tertiary-fixed-variant": "#663d0f",
+              "tertiary-container": "#976736",
+              "surface-tint": "#be0f09",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#f9f9f9",
+              "on-tertiary-container": "#fff5ef",
+              "primary-container": "#da291c",
+              "on-surface": "#1b1b1b",
+              "on-primary-fixed-variant": "#930001",
+              "surface-container-high": "#e8e8e8",
+              "inverse-surface": "#303030",
+              "tertiary-fixed": "#ffdcbf",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed": "#251a00",
+              "surface": "#f9f9f9",
+              "tertiary": "#7b4f20",
+              "secondary-container": "#ffc72c",
+              "on-secondary": "#ffffff",
+              "secondary": "#775a00",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-primary-container": "#fff5f3",
+              "inverse-primary": "#ffb4a8",
+              "outline": "#916f6a",
+              "outline-variant": "#e6bdb7",
+              "surface-container-highest": "#e2e2e2",
+              "on-surface-variant": "#5c403b",
+              "on-primary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#410000",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-fixed-dim": "#f6bf22",
+              "on-secondary-container": "#6f5400",
+              "error-container": "#ffdad6",
+              "secondary-fixed": "#ffdf99",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f3f3f3",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(181,3,3,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black text-red-600 dark:text-red-500 uppercase tracking-tighter" href="index.html">The Digital Diner</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:scale-105 transition-transform duration-200" href="index.html">Menu</a>
+<a class="text-red-600 dark:text-red-500 border-b-2 border-red-600 font-bold tracking-tight transition-all" href="cart.html">Cart</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-zinc-600 hover:scale-105 transition-transform" data-icon="account_circle">account_circle</button>
+<a class="material-symbols-outlined text-red-600 hover:scale-105 transition-transform" data-icon="shopping_basket" href="cart.html">shopping_basket</a>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20 px-6 max-w-screen-xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="flex-1">
+<header class="mb-10">
+<a class="inline-flex items-center gap-2 text-primary font-semibold mb-4 group" href="index.html">
+<span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                        Back to Menu
+                    </a>
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface">Your Group Order</h1>
+<p class="text-on-surface-variant mt-2">Review items before finalizing the feast.</p>
+</header>
+<div class="space-y-6">
+<div class="bg-surface-container-lowest rounded-xl p-6 flex flex-col md:flex-row gap-6 relative group overflow-hidden">
+<div class="w-full md:w-32 h-32 rounded-xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Gourmet double cheeseburger with melting cheddar, crisp lettuce, and fresh tomatoes on a toasted brioche bun with editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKqy8nxDvKWFokC5qSCebU-BYPoudkZLwL61OHm5ImTou4maxxc-zu-Ji3I8CJmGKaTaX6hJpiLikPZw6DAIWTj6_8cuK5jApQFmZWhrZ5k2nTPUORNFxQGEQu_cZlOlNycWovBrzGPKHZucECZRvOWoqHLV12KTy_2jORaJTfRboD56NB8Zb2tpkgVWBVHU0WEh-rQqVXkiyKN3fHUv55i9ewnmw2mpY9qNJ_ld8eRZdWjYbRcTQ2uoHY1M0ggcYpDL6P2Hm4R_or"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-on-surface">The Signature Stack</h3>
+<span class="text-lg font-extrabold text-primary">$14.99</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Double beef, aged cheddar, diner sauce, pickles.</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-4 py-2">
+<button class="material-symbols-outlined text-primary text-lg">remove</button>
+<span class="font-bold w-4 text-center">2</span>
+<button class="material-symbols-outlined text-primary text-lg">add</button>
+</div>
+<button class="text-error font-semibold flex items-center gap-1 text-sm hover:opacity-80">
+<span class="material-symbols-outlined text-lg">delete</span>
+                                    Remove
+                                </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 flex flex-col md:flex-row gap-6 relative group overflow-hidden">
+<div class="w-full md:w-32 h-32 rounded-xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Golden crispy french fries served in a wire basket with a sprinkle of sea salt and a side of creamy dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc9dDOmEthJ2eJmf5vWETBDdKVNcLDcrN8S-nrRu0yJPNyCFSq8xWLZYnv5wJkjtm-wNM3Uyalx6yHCcF9aevDxrqcCqS7qKCH44q4THmUqbUBWjFK58luq7aDnCoebJOtCyKaIAC2qq5G233Xw6CEGyut6i3wNlhuB8EDuW1EGC9yZqm86LuSTvJdFCqALUv6QEdviDdKb02bKdvtSLxemPfQTz2OFM6RNiT0ZqFnIzsS5gACbhM81ldCpR_WgXGG0hAzGm7hwwP3"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-on-surface">Truffle Parm Fries</h3>
+<span class="text-lg font-extrabold text-primary">$8.50</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Large shareable portion with roasted garlic aioli.</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-4 py-2">
+<button class="material-symbols-outlined text-primary text-lg">remove</button>
+<span class="font-bold w-4 text-center">1</span>
+<button class="material-symbols-outlined text-primary text-lg">add</button>
+</div>
+<button class="text-error font-semibold flex items-center gap-1 text-sm hover:opacity-80">
+<span class="material-symbols-outlined text-lg">delete</span>
+                                    Remove
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-[400px]">
+<div class="bg-surface-container-low rounded-xl p-8 sticky top-32">
+<h2 class="text-2xl font-extrabold mb-6 flex items-center gap-2">
+                        Order Summary
+                        <span class="material-symbols-outlined text-secondary-fixed-dim">receipt_long</span>
+</h2>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between text-on-surface-variant font-medium">
+<span>Subtotal</span>
+<span>$38.48</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-medium">
+<span>Delivery Fee</span>
+<span class="text-secondary font-bold">FREE</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-medium">
+<span>Service Charge</span>
+<span>$2.50</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/15 flex justify-between items-end">
+<span class="text-lg font-bold">Total</span>
+<div class="text-right">
+<span class="block text-3xl font-black text-primary">$40.98</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Taxes included</span>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container/20 rounded-xl p-4 mb-8 flex gap-4 border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+<div>
+<p class="font-bold text-on-secondary-container text-sm">Cash on Delivery</p>
+<p class="text-xs text-on-secondary-container/80 mt-1">Pay comfortably when your feast arrives at your door.</p>
+</div>
+</div>
+<div class="space-y-4">
+<a class="block w-full bg-primary-container text-on-primary-container text-center py-5 rounded-full font-black text-lg shadow-[0_10px_30px_rgba(181,3,3,0.2)] hover:scale-[1.02] active:scale-95 transition-all" href="admin.html">
+                            Proceed to Order
+                        </a>
+<p class="text-center text-xs text-on-surface-variant px-4">
+                            By clicking proceed, you agree to our Terms of Service and hungry stomach policy.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-24">
+<h2 class="text-3xl font-extrabold mb-8 tracking-tight">You Might Also Crave</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.02)] group">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Cold refreshing glass of cola with ice cubes and condensation on a bright studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJdEWcfYc4jcRxj_c7Eiaqfd6O3lIkjp73wCppABd45X_TOXXvkuxLy1UNMShZX6YUtw0xTP8UiWIdnDSHGBoRBKBqLGxt5d6vVwAZtGTh2IeMVHFqp991nDD8FUjHQCYtzNEcEks3XpPSNMg-SYVx1cpHXMIaJy30__UrJNUbTZiI9YCSaB4pLcph08QUgjGGqktXtpb96dO3bECNwver4C0vbcqAaexHCSXsmkUmFNj9VvACiRF53LKDx1gb0yh6LGwDV0EelIbC"/>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h4 class="font-bold">Diner Classic Cola</h4>
+<p class="text-sm text-on-surface-variant">$3.50</p>
+</div>
+<button class="bg-secondary-container text-on-secondary-container p-2 rounded-full material-symbols-outlined">add</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.02)] group">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Decadent chocolate glazed doughnut with sprinkles on a minimalist pastel background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKGTP-lBtPTbc4G6qpfpUaMNIKePd7k7nS-13Sm2aEWeu9VDDlzPm7AXNIGYmowRohDHlbjr84cd-HSsnyGzy2u0zHgxvo_TBm9l1Pz_ALd_2OxtUpEFv7ZxlYjueSfVonz_SZUKTOIBMzcrS9G08MNLa1CJNXUHnUd1jzXisIFE5DPp1DXIltuGlYXONS4fYDQHBq8tVvlg2olnD_3RVo-o4rWOpBNUIOJaewVJS9qGAtaL6ThmrU9ow7JgjHXY1IbxvJSoEGDy-y"/>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h4 class="font-bold">Glazed Dream</h4>
+<p class="text-sm text-on-surface-variant">$4.25</p>
+</div>
+<button class="bg-secondary-container text-on-secondary-container p-2 rounded-full material-symbols-outlined">add</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.02)] group">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of golden brown onion rings stacked neatly on a rustic wooden platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaEFyGmxcyEwsBKVMstRx6ptoqBKNHt2b0VT69bYMECUQE_exyB0X9W0CB9Ly-BEwsx_-jDDpQY_no3FDJti-oluAezSmrai08ADs6O4pB4WpY7J_xxwBlPGo_1KGuf-TmYoQsXOF9jAA3kr83R6u6B6n8iVrCzDdW4s3g6JweSmanZZ6AZQnIxSXisIuCMJ-CEqiGhqWqbKz44R3B15GZm9tEn1eHVXRa6qBk369hP2OXTZUqs-Jul--zGlDYQQVDqVQ8R-9p57HK"/>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h4 class="font-bold">Giant Onion Rings</h4>
+<p class="text-sm text-on-surface-variant">$6.99</p>
+</div>
+<button class="bg-secondary-container text-on-secondary-container p-2 rounded-full material-symbols-outlined">add</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-zinc-100 dark:bg-zinc-900 py-12 px-6">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<span class="text-xl font-black text-red-600 uppercase tracking-tighter">The Digital Diner</span>
+<div class="flex gap-8 text-sm font-semibold text-zinc-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<p class="text-zinc-400 text-xs">© 2024 The Digital Diner. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
