@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Diner | Elevated Editorial Dining</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#976736",
+              "outline": "#916f6a",
+              "outline-variant": "#e6bdb7",
+              "surface-tint": "#be0f09",
+              "secondary": "#775a00",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e2e2e2",
+              "background": "#f9f9f9",
+              "secondary-fixed": "#ffdf99",
+              "on-primary-fixed": "#410000",
+              "surface-container": "#eeeeee",
+              "on-secondary-container": "#6f5400",
+              "on-primary-fixed-variant": "#930001",
+              "secondary-fixed-dim": "#f6bf22",
+              "on-secondary-fixed": "#251a00",
+              "inverse-on-surface": "#f1f1f1",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f3f3f3",
+              "primary-container": "#da291c",
+              "tertiary-fixed-dim": "#f6bb82",
+              "surface-dim": "#dadada",
+              "on-tertiary-fixed": "#2d1600",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#5c403b",
+              "on-primary-container": "#fff5f3",
+              "surface": "#f9f9f9",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "on-surface": "#1b1b1b",
+              "on-tertiary-fixed-variant": "#663d0f",
+              "tertiary-fixed": "#ffdcbf",
+              "secondary-container": "#ffc72c",
+              "primary-fixed-dim": "#ffb4a8",
+              "inverse-surface": "#303030",
+              "surface-container-highest": "#e2e2e2",
+              "primary": "#b50303",
+              "surface-container-high": "#e8e8e8",
+              "on-background": "#1b1b1b",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#ffb4a8",
+              "on-tertiary-container": "#fff5ef",
+              "on-secondary-fixed-variant": "#5a4300",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "tertiary": "#7b4f20",
+              "primary-fixed": "#ffdad4",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(181, 3, 3, 0.06);
+        }
+        .glass-panel {
+            background: rgba(238, 238, 238, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md z-50 editorial-shadow">
+<a class="text-2xl font-black text-[#DA291C] italic tracking-tight transition-transform duration-200 hover:scale-105 active:scale-95" href="index.html">
+            The Digital Diner
+        </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#DA291C] dark:text-[#DA291C] font-extrabold border-b-4 border-[#DA291C] py-1 transition-transform duration-200 hover:scale-105" href="index.html">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium py-1 transition-transform duration-200 hover:scale-105" href="cart.html">Cart</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-stone-600 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="text-stone-600 hover:scale-105 transition-transform relative" href="cart.html">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">4</span>
+</a>
+<button class="text-stone-600 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Editorial Hero Banner -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+<div class="relative bg-surface-container-low rounded-xl overflow-visible h-[480px] flex items-center p-12 lg:p-20">
+<div class="relative z-10 max-w-xl">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Limited Time Offer</span>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-on-surface mb-6 leading-none">The Truffle Bundle</h1>
+<p class="text-lg text-on-surface-variant mb-8 font-medium">Elevate your group ritual with our signature umami-rich truffle burgers, oversized parm fries, and artisanal sodas for four.</p>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-extrabold text-lg transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20" href="cart.html">
+                        Add to Order <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Asymmetric Bleeding Image -->
+<div class="absolute right-0 top-0 bottom-0 w-1/2 hidden lg:block overflow-visible translate-x-12 -translate-y-8">
+<img alt="Gourmet Truffle Burger" class="w-full h-[120%] object-contain drop-shadow-2xl" data-alt="Gourmet double truffle burger with melting cheese, crispy onions and visible black truffle shavings against a minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCA4r2b9WbGP6Wi_xvuw0vXK0o1LVHz2BWiSbrrSQAtIS30OE6DAYYs5YH7Fi9-LDLtZtsDL5bmFLgMTlsADINCRTp_bfAwqUOLlEQS_kxU1cCuYzCRg-FOuGjslMxBU7MH_alE35wNR_EBNHB-rekYZ_b32OC-yV3yYdwfaSnUV4ayGaO_RUvoBXYA-5v0SJ5JCnuZWzJNSvTmLRLPAqQMmrsP9NXxF-zlCmVtKNKQOX28klQXN44FOctNUgnA8Xy57NtfkhqL2sO"/>
+</div>
+</div>
+</section>
+<!-- Category Selector -->
+<nav class="sticky top-[80px] bg-surface/90 backdrop-blur-md z-40 py-6 mb-12 border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 flex items-center gap-4 overflow-x-auto no-scrollbar">
+<button class="whitespace-nowrap px-8 py-3 rounded-full bg-secondary-container text-on-secondary-container font-bold text-sm hover:scale-105 transition-transform">All</button>
+<button class="whitespace-nowrap px-8 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-sm hover:scale-105 transition-transform">Shared Classics</button>
+<button class="whitespace-nowrap px-8 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-sm hover:scale-105 transition-transform">The Fry Station</button>
+<button class="whitespace-nowrap px-8 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-sm hover:scale-105 transition-transform">Beverages</button>
+<button class="whitespace-nowrap px-8 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-bold text-sm hover:scale-105 transition-transform">Salads &amp; Greens</button>
+</div>
+</nav>
+<!-- Menu Grid -->
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-10">
+<!-- Item 1 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Signature Cheeseburger" class="w-full aspect-square object-contain drop-shadow-xl" data-alt="Signature gourmet cheeseburger with fresh lettuce, tomato, and secret sauce on a toasted brioche bun, floating against a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeHMVGajWMy0tsIPWkgx6-A73UsG5XC89qhUwCfpWxa78eqtrcA8M7MdG16kvkk9E2rl7PxrimOjXWDvjz8AEgg4xGdWMC9W-t6GQ521HJXoooqFexy4eoLO3Uo_bLQjbxnxSXfCGJlGTlK3zGxNAptgIM8rGDeW00987mU6AXarxRm2oP8q-Us6n5iDIjSWOAdrVwwnqjn6q0S0wDK97KxYPRnIeLkt01bIl9J5EVfEkLncTwjPoECFnGIqCfVOOzrTFzXNImrQmS"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">Classic Editorial Burger</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Prime beef, aged cheddar, and house-made aioli on a toasted milk bun.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$14.50</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Crispy Golden Fries" class="w-full aspect-square object-contain drop-shadow-xl" data-alt="A tall cone of golden brown crispy french fries dusted with sea salt and rosemary herbs, floating against a soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpxf_lBc7U_MggZ464X1WGzx8Gi39ZSmPGIVL0tr0mZiZ_dbHvLJDQph1JrtNq0_Enlyo4Q7hur1n_45_m0uKCrVNUnN8LLjJO8jGG8brbm61X6fsnWtTjpbkBSn5I5Pl6lMvhEKtAE0vn5M-MyjqZ-B15q75yZ4uuC0hIMM9IFqLyTHTKARqFnfnxScViWRhQygfOlW7c8ypwxR-RB2ato7jgzdloltkEr5ouUlLPjj5XP4ITmkWu3KAVpyg12CcrUSns5ZsFJNGJ"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">Rosemary Salt Fries</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Triple-cooked russet potatoes with fresh herbs and citrus zest.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$6.50</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Green Bowl" class="w-top aspect-square object-contain drop-shadow-xl" data-alt="Vibrant salad bowl with avocado, chickpeas, kale, and toasted seeds with a light tahini dressing drizzle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa0OpBJc5zoGVpyNcN2Ly9lyyj6nu5tZ0qGsSwMPaKxDA7mbif3qfhbqIaIOLhWGZSH9biDw8-__hr3euko3RGlQFcE1bOnRBTxUyzG-7LkCF6YnkyZKxxTpDKPkU_JzBmjBwJh-JrGYtLG4RpSCrjuQaewpZhrv6rZ4rc4kNYs9S8qXuyhccMq-oO4d7M8zbv24AnnCobhx7i8CUZ6X-6rb7kvnXyKh59qFiGmHNyUOjPFMk5cmO73ZWiFQR21axYP8cYuxs5aJQc"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">The Garden Ritual</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Massaged kale, roasted chickpeas, and tahini lemon drizzle.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$12.00</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Double Stack" class="w-full aspect-square object-contain drop-shadow-xl" data-alt="Massive double stack beef burger with multiple layers of melting cheese and crispy bacon strips overflowing from the sides" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5ch-X9ObpcRKVGVA9ilSQhVDW86sb0BytRUlgsaUu5v3qCkKSV3MSIfEFw0o5y0EYcMpBMtMIBW2auECC_P47s_HgSm8m_GxiCpEiOaj8YfT6cm_0Dz8cZCm0vUwVTy2QJLVrwnfVlLPbRb_v5A87UfxgEiCH-JeJljagFKrSWF8E7eFYme1QyrR7KAqzge6Q93b-xPum7vYlosDxXxOi3nSNtCrrbHl3KqtIXMz4WXbyoOANX6_yrVRAfNrUBtl97vtwbhUajb_"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">The Monster Stack</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Double patty, triple cheese, smoked bacon, and caramelized onions.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$18.50</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Espresso Martini" class="w-full aspect-square object-contain drop-shadow-xl" data-alt="Sophisticated espresso martini in a coupe glass with a dense foam top and three coffee beans, clean editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArO0_X5H59-T48bsgoWv3vnm_du6wbHc6HJQ_dMuyeydnl0sesuwBepNsJXXZsKqLo2srm5Lt8jMxTKwRw50XGN5BxH76cdOS-CmDCTK2uszmF9V_nw1nAEqvvMspvVMrBS14FyAk7L18HdpNs38rK4VGN1t06d_AyvGH0XWRu55znXNYa01HA8JVqx_3l5bTScYqRsHZvL3cd7sKSlEWF8ckgb9NVPjusv0UFpSmIFMBDdBGoVKr5MGuX6VO7yOAwp8y8nhb5e_x9"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">Diner Martini</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Small-batch cold brew, vanilla bean vodka, and a hint of salt.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$11.00</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:editorial-shadow border border-outline-variant/5">
+<div class="relative -mt-16 mb-6 transition-transform duration-500 group-hover:scale-110">
+<img alt="Chicken Strips" class="w-full aspect-square object-contain drop-shadow-xl" data-alt="Crispy buttermilk fried chicken strips served with a small silver bowl of spicy red dipping sauce on the side" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz2z8MgUPDstPWg2nFkrY7tn_Hnq3tx8F2fpuJ3qHEngYlisOMhWnAbKxXJh-UgDnBgZyzU3ptP_1nIgUW7WQltjycdMCn3OoWQAYvrNd6wUjnXJwbt006wyOBbGlJteaSdYcX6gz_eoSGXwTYpQBSQxLZO6_w0TAUxeuuQvl1e_ne2t-XzI_I5rnkKUSXDhdxV7WRr7DhPVUKXFNcZKI1h7zjWvasGiDSc7w60KYyvI1PRLP-qCwRGCUraB9-KhDf6eNAyNIwKdBG"/>
+</div>
+<h3 class="text-2xl font-black mb-2 tracking-tight">Buttermilk Tenders</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Organic chicken brined for 24 hours, served with spicy maple dip.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-extrabold text-on-surface">$13.50</span>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95" href="cart.html">Add to Order</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Active Group Order Banner (Floating Bottom) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-2xl z-50">
+<div class="glass-panel rounded-full px-4 py-3 flex items-center justify-between shadow-2xl border border-white/20">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container border-2 border-white flex items-center justify-center font-bold text-xs">JD</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container border-2 border-white flex items-center justify-center font-bold text-xs">AM</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container border-2 border-white flex items-center justify-center font-bold text-xs">KT</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant border-2 border-white flex items-center justify-center font-bold text-xs">+1</div>
+</div>
+<div class="hidden sm:block">
+<p class="text-[10px] uppercase tracking-widest font-black text-on-surface-variant">Active Group Order</p>
+<p class="text-sm font-extrabold">4 items in total</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right">
+<p class="text-xs font-bold text-on-surface-variant">Current Total</p>
+<p class="text-lg font-black text-primary">$42.00</p>
+</div>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-full font-extrabold text-sm transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 whitespace-nowrap" href="cart.html">
+                    Review Order
+                </a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center justify-center space-y-4 bg-stone-50 dark:bg-stone-900 py-12 border-t border-stone-200/15 dark:border-stone-800/15">
+<p class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400">© 2024 The Digital Diner. Elevated Editorial Dining.</p>
+<div class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 transition-all duration-300 underline decoration-[#DA291C] decoration-2 underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 transition-all duration-300 underline decoration-[#DA291C] decoration-2 underline-offset-4" href="#">Terms of Service</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 transition-all duration-300 underline decoration-[#DA291C] decoration-2 underline-offset-4" href="#">Contact Us</a>
+</div>
+</footer>
+</body></html>
