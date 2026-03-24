@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Diner | Shared Classics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#976736",
+                        "primary-fixed": "#ffdad4",
+                        "primary": "#b50303",
+                        "on-secondary-fixed-variant": "#5a4300",
+                        "inverse-primary": "#ffb4a8",
+                        "outline": "#916f6a",
+                        "secondary": "#775a00",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-surface": "#303030",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#f6bb82",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed": "#251a00",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed": "#2d1600",
+                        "secondary-fixed-dim": "#f6bf22",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-container": "#da291c",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#e6bdb7",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#fff5f3",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "tertiary": "#7b4f20",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-fixed": "#ffdcbf",
+                        "secondary-container": "#ffc72c",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#663d0f",
+                        "surface-tint": "#be0f09",
+                        "on-secondary-container": "#6f5400",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffdf99",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#fff5ef",
+                        "on-primary-fixed": "#410000",
+                        "on-primary-fixed-variant": "#930001",
+                        "on-background": "#1b1b1b",
+                        "on-surface": "#1b1b1b",
+                        "on-surface-variant": "#5c403b"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .filled-icon { font-variation-settings: 'FILL' 1; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(181,3,3,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black italic text-red-600 dark:text-red-500">The Digital Diner</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-red-600 dark:text-red-500 border-b-4 border-red-600 font-['Plus_Jakarta_Sans'] font-bold tracking-tight py-1 hover:scale-105 transition-transform duration-200 active:scale-95" href="#">Shared Classics</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-['Plus_Jakarta_Sans'] tracking-tight py-1 hover:scale-105 transition-transform duration-200 active:scale-95" href="#">The Fry Station</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-['Plus_Jakarta_Sans'] tracking-tight py-1 hover:scale-105 transition-transform duration-200 active:scale-95" href="#">Beverages</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-['Plus_Jakarta_Sans'] tracking-tight py-1 hover:scale-105 transition-transform duration-200 active:scale-95" href="#">Rewards</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container rounded-full px-4 py-2 gap-2">
+<span class="material-symbols-outlined text-zinc-400" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 font-medium" placeholder="Search cravings..." type="text"/>
+</div>
+<button class="relative p-2 hover:scale-105 transition-all active:scale-95">
+<span class="material-symbols-outlined text-zinc-700" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full">3</span>
+</button>
+<button class="p-2 hover:scale-105 transition-all active:scale-95">
+<span class="material-symbols-outlined text-zinc-700" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Hero Section: Editorial Style -->
+<section class="relative h-[400px] mb-16 rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+<img alt="The Signature Stack" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a premium double cheeseburger with melting cheddar and fresh lettuce on a toasted sesame bun, dramatic moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMHsOFg85t2klVonZ6Zo-YKfCap_wBK1N_0Tc42jgTENGa7aZLsFwQglX0McSBplVRu-eXOPnECLYwmYBpNZ9ncJ7sYVLXJQsS3S2HTHDDmu34EUp6KVPgGDmArf87OlJUNNpG-5uW5xOtTEg8BtID4HFIJns8dzSTJ2XWggJkvrbIKthaWr8ZR51msOKh33MNPATzm_ScDSxFIfhm9cEoLhlPBhvyJXZqdLXH8Oe4bsJdrLk9cOhi9GCldXQD7u6bpe0ghwXN-IIj"/>
+<div class="relative z-20 h-full flex flex-col justify-center px-12 max-w-2xl">
+<span class="text-secondary-container font-bold uppercase tracking-[0.2em] text-sm mb-4">Limited Time Group Deal</span>
+<h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6 italic tracking-tighter">The Shared Classics</h1>
+<p class="text-white/80 text-lg mb-8 font-medium">Feast together with our curated selection of heritage recipes, designed for the ultimate communal experience.</p>
+<div>
+<button class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all active:scale-95 shadow-xl shadow-primary/20">
+                        Start Group Order
+                    </button>
+</div>
+</div>
+</section>
+<!-- Category Scroll (Mobile Only) / Filter Bar -->
+<div class="flex items-center gap-4 mb-12 overflow-x-auto no-scrollbar pb-2">
+<button class="flex-shrink-0 bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all">All Items</button>
+<button class="flex-shrink-0 bg-surface-container-high text-on-surface px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all">Bento Boxes</button>
+<button class="flex-shrink-0 bg-surface-container-high text-on-surface px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all">Signature Burgers</button>
+<button class="flex-shrink-0 bg-surface-container-high text-on-surface px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all">Family Buckets</button>
+</div>
+<!-- Product Grid: Asymmetric Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 relative overflow-hidden group hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all">
+<div class="flex flex-col md:flex-row items-center gap-8 h-full">
+<div class="flex-1 z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Best Seller</span>
+<span class="text-zinc-400 text-xs font-bold">1280 CAL</span>
+</div>
+<h3 class="text-3xl font-black mb-2 tracking-tight">The Dynasty Platter</h3>
+<p class="text-zinc-500 mb-6 font-medium">4 Signature Burgers, 2 Large Fries, and 4 Fountain Drinks. Perfect for the crew.</p>
+<div class="flex items-center gap-4">
+<span class="text-2xl font-black text-primary">$34.99</span>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold text-sm flex items-center gap-2 hover:scale-105 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+                                Add to Order
+                            </button>
+</div>
+</div>
+<div class="flex-1 relative h-64 w-full">
+<img alt="Dynasty Platter" class="absolute top-0 right-0 w-full h-full object-contain transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500" data-alt="A large wooden platter filled with several burgers, golden crispy fries, and multiple cups of soda, bright professional commercial food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc7s9JzHFHsqDsea1nfHE2fcum2cDS6EnzoxuNzdTJK3Kk_q76qdhwU9x5B0jV0l3loBzH4CBl6aqSSJC_0ZppnHMMjcXFOwxKkLD82somRwtjfD98ZCBO47qlwEMwH7Vv8m_mQWUz6l84Rxk5KOHN4evUc80cx_BvcAmSpDL3pcZ_pIIJgfw6eiL3yM5yML9BX-XJ8w69a-8oOoSFmR7ymjs6eip6WNLGsyxXM1QLOiAl2amCnscv3GIVPEggWTCumyMvMQmtxnkS"/>
+</div>
+</div>
+</div>
+<!-- Side Card 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-6 flex flex-col hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all group">
+<div class="relative h-48 mb-6">
+<img alt="Classic Deluxe" class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500" data-alt="Gourmet cheeseburger with fresh red onions, pickles, and tomato on a shiny brioche bun, studio lighting against a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0B3-qgb28jN_C100h3DEcOIQC8XaJCFLVJgafbFzGgAA8_1MjrstXONmpyAyJwvV71rzrnJMTakNky4r30N7A3KKlAeMZp8RsKl2Ps3cL3uhxK_opMEdgULDTLzuHUiiKWgMX5hss41QNtQoNSCYiHSsa6PeJ8Z6dLTIfr2YDDEXpaD3W7sEohe0dkvd-Ed2wCrnfXVTUtnXApx5aQDYdTxMdi8AV6DsYF0yGnAmL7bw0qM2dXivHCliZhiyvf70WI_tG9K0FwkD"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold tracking-tight">Classic Deluxe</h3>
+<span class="font-black text-primary">$8.49</span>
+</div>
+<p class="text-zinc-400 text-sm mb-6 flex-grow">Our original recipe with a digital twist. Extra secret sauce included.</p>
+<button class="w-full bg-surface-container-high text-on-surface py-3 rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                    Quick Add
+                </button>
+</div>
+<!-- Standard Grid Cards -->
+<div class="md:col-span-3 bg-surface-container-lowest rounded-xl p-6 flex flex-col hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all group">
+<div class="relative h-40 mb-4">
+<img alt="Truffle Fries" class="w-full h-full object-contain transform group-hover:rotate-6 transition-transform duration-500" data-alt="Golden crispy french fries seasoned with herbs and truffle oil in a red container, high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0CJNwCnH9MmBrcPW4cw4afa0-YyV1yGlam9aD4Cc4_H3P3usIdEGQUlnSSpAj1vZKBKkQb9zMV5WbqLRGLD2mE52YAbZTpD_UXTzMK0fnm6rWFQAghbqUdxnI-ut5WxP8Ym0__mvNy4yS_j1U42EVkGTJd5r2xD0nsDPc7Zuyp4JddSrBjqwJ2u2vqnedKw2J4GtaYQ5XD5uLOeUT0kkiMoM8DtiABkdBrONJOJNCcqGx2iRgWN8BzHWqsDZkjr_x7lPGyWrvWUKI"/>
+</div>
+<h4 class="font-bold text-lg mb-1">Golden Truffle Fries</h4>
+<div class="flex justify-between items-center">
+<span class="font-black text-zinc-900">$4.99</span>
+<button class="bg-primary text-white h-10 w-10 rounded-full flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-3 bg-surface-container-lowest rounded-xl p-6 flex flex-col hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all group">
+<div class="relative h-40 mb-4">
+<img alt="Spicy Bird" class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500" data-alt="Spicy fried chicken sandwich with coleslaw and jalapeños on a bun, vibrant orange and red tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXUUi9FXA-rh5iOMJSLfh3LiO8spgRRprUt5NXZA_6V2Gi9THFqrnzIxtFGrXlGXT5x0dtzkQH7SJyIZqTQ1otCFyq2-X5E1RK19lCdewvgo_9d7RKTUlncd8CHXi9A3pYsvjY0AnhDwCI20iUizEmzAL4bhYFRn-TT1iDfKcWvSSsFHsNn1WKJ0Naa5ovMYPPHXRSzdGwH_C8XLaAGrCe10CNBEGtFtWOAgAokjZjLUxs-VALy6YO8gq-ElrNSCRMytrNx9m6ROFr"/>
+</div>
+<h4 class="font-bold text-lg mb-1">Neon Spicy Bird</h4>
+<div class="flex justify-between items-center">
+<span class="font-black text-zinc-900">$9.29</span>
+<button class="bg-primary text-white h-10 w-10 rounded-full flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-3 bg-surface-container-lowest rounded-xl p-6 flex flex-col hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all group">
+<div class="relative h-40 mb-4">
+<img alt="Berry Blast" class="w-full h-full object-contain transform group-hover:-translate-y-2 transition-transform duration-500" data-alt="Refreshing berry smoothie with ice cubes and mint leaf garnish in a clear tall glass, bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwhhQ9TB55Jx9-ZhQs86_kqh1TOBJk3j0n4ElIWjneW8gKJf1hImJeZfodtBft7KYm9trJ4nzQP3n_j6TbBL4OPvnTNG47rDCs39KnpZa9G5xp5UaxbZ4CFdQRVYodOH_k7IPW8MJa6QuBmLehdTeuKIx0NYEMFPuZxOXAjc-XWoX7EjSH0BL73cZ2n78ZOaK0AZxbzPwOlb1VPVPqPGcwvjt-1_zerAPHr6S06aVilwvtC6gqa6wMnmQSXzUPSuJJdtYwXqNQtJcQ"/>
+</div>
+<h4 class="font-bold text-lg mb-1">Berry Byte Blast</h4>
+<div class="flex justify-between items-center">
+<span class="font-black text-zinc-900">$3.49</span>
+<button class="bg-primary text-white h-10 w-10 rounded-full flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-3 bg-surface-container-lowest rounded-xl p-6 flex flex-col hover:shadow-[0_20px_40px_rgba(181,3,3,0.06)] transition-all group">
+<div class="relative h-40 mb-4">
+<img alt="Diner Shake" class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500" data-alt="Classic chocolate milkshake with whipped cream and a cherry on top, retro aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPoYB8NZ5OWPxd9KY05T-KtZAxOdXCT6rETMRBKmDuxr64t-BuwD9gbbMbcyn3vsQ2Adqg4u20gwP2shhLKq-6B13WiawX3kKdaszO-xYSideV-UslktJgkXpXPIXh2p-9KrPP97w4tFXu8H83xz0pD9GShCEYDqbZPONS_t4GoQs0DC2Yyl_ynrjQsesPSv_D0euNpmYa72OE9wPMGrpX7qLmBzt7QXjlsU8xyZHby8yIjOutNvj2Qaf-m1KPVXzBwybUnKw_zViy"/>
+</div>
+<h4 class="font-bold text-lg mb-1">Velvet Cocoa Shake</h4>
+<div class="flex justify-between items-center">
+<span class="font-black text-zinc-900">$5.99</span>
+<button class="bg-primary text-white h-10 w-10 rounded-full flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Cart Button -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-black text-lg flex items-center gap-4 shadow-[0_20px_40px_rgba(255,199,44,0.3)] hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined filled-icon text-3xl" data-icon="shopping_basket">shopping_basket</span>
+<span>View Group Order (12)</span>
+<span class="bg-on-secondary-container/10 px-3 py-1 rounded-full text-sm font-black">$142.50</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="bg-zinc-100 dark:bg-zinc-950 w-full py-12 px-8 border-t-0 mt-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+<div class="flex flex-col gap-4">
+<span class="text-sm font-black text-zinc-400 uppercase tracking-widest">The Digital Diner</span>
+<p class="text-zinc-500 font-medium max-w-sm">Redefining the shared meal for the modern digital collective. High speed cravings, elevated.</p>
+<p class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-bold text-zinc-500">
+                    © 2024 The Appetizing Collective. All rights reserved.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-6 md:justify-end items-start">
+<div class="flex flex-col gap-3">
+<span class="text-xs uppercase tracking-widest font-bold text-red-600">Company</span>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-xs font-bold uppercase tracking-widest" href="#">Support</a>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-xs font-bold uppercase tracking-widest" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-xs uppercase tracking-widest font-bold text-red-600">Legal</span>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-xs font-bold uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-xs font-bold uppercase tracking-widest" href="#">Nutrition Info</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
